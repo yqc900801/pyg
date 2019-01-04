@@ -4,7 +4,8 @@ module.exports.index = (req, res, next) => {
     // 1. 轮播图信息
     homeMoudel.getSlider()
         .then(data => {            
-            res.locals.sliders = data;  
+            res.locals.sliders = data; 
+            console.log(res.locals.sliders) 
             res.render('home.art')
         })
         .catch(err => next(err));

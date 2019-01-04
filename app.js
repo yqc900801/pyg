@@ -61,7 +61,7 @@ app.use((err, req, res, next) => {
         const youch = new Youch(err, req);
         return youch.toHTML().then((html) => {
             res.send(html)
-        })
+        })        
     }
     // 生产环境错误
     res.status(err.status || 500);
