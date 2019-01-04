@@ -13606,6 +13606,7 @@ https://github.com/yui/pure/blob/master/LICENSE.md
 
 .yui3-u-1-6,.yui3-u-4-24 {
 	width: 16.6667%;
+	position: relative;
 }
 
 .yui3-u-1-5 {
